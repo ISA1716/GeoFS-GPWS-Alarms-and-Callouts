@@ -1,2 +1,2 @@
 # GeoFS-GPWS-Alarms-and-Callouts
-These files are to replace some of the Alarms in GGamerGGuy's GeoFS GPWS Callouts addon.
+Most Credit goes to tylerbmusic for the original addon, I'll just make some edits to the addon and rename it.
