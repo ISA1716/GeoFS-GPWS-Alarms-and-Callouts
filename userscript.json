@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GeoFS GPWS callouts
-// @version      1.23
+// @version      1.24
 // @description  Adds some GPWS callouts
 // @author       tylerbmusic, edited by ISA1716
 // @match        https://www.geo-fs.com/geofs.php?v=*
@@ -36,7 +36,7 @@ setTimeout((function() {
     window.dontSink = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/dont-sink.wav');
     window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/masterAlarm.wav');
     window.bankAngle = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bank-angle.wav');
-    window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Overspeed%20Airbus.mp3');
+    window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Overspeed%20Airbus.mp3');
     window.justPaused = false;
     window.masterA.loop = true;
     window.bankAngle.loop = true;
@@ -113,16 +113,16 @@ setTimeout((function() {
                 window.a20 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o20.wav');
                 window.a10 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o10.wav');
                 window.a5 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b5.wav');
-                window.stall = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Boeing%20737%20Stall%20Alarm.mp3');
+                window.stall = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Boeing%20737%20Stall%20Alarm.mp3');
                 window.glideSlope = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/oglideslope.wav');
                 window.tooLowFlaps = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/otoo-low_flaps.wav');
                 window.tooLowGear = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/otoo-low_gear.wav');
                 window.apDisconnect = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Boeing%20Autopilot%20Disengage.mp3');
                 window.minimumBaro = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/ominimums.wav');
-                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Sink%20Rate%20Pull%20Up%20Boeing.mp3');
+                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Sink%20Rate%20Pull%20Up%20Boeing.mp3');
                 window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bmasterAlarm.wav');
-                window.bankAngle = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Bank%20Angle%20Boeing.mp3');
-                window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Boeing%20Overspeed%20Alarm.mp3');
+                window.bankAngle = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Bank%20Angle%20Boeing.mp3');
+                window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Boeing%20Overspeed%20Alarm.mp3');
                 window.masterA.loop = true;
                 window.bankAngle.loop = true;
                 window.overspeed.loop = true;
@@ -145,12 +145,12 @@ setTimeout((function() {
                 window.glideSlope = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bglideslope.wav');
                 window.tooLowFlaps = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/btoo-low_flaps.wav');
                 window.tooLowGear = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/btoo-low_gear.wav');
-                window.apDisconnect = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Boeing%20Autopilot%20Disengage.mp3');
+                window.apDisconnect = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Boeing%20Autopilot%20Disengage.mp3');
                 window.minimumBaro = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bminimums.wav');
-                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Sink%20Rate%20Pull%20Up%20Boeing.mp3');
+                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Sink%20Rate%20Pull%20Up%20Boeing.mp3');
                 window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bmasterAlarm.wav');
-                window.bankAngle = new Audio('ttps://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Bank%20Angle%20Boeing.mp3');
-                window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Boeing%20Overspeed%20Alarm.mp3');
+                window.bankAngle = new Audio('ttps://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Bank%20Angle%20Boeing.mp3');
+                window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Boeing%20Overspeed%20Alarm.mp3');
                 window.masterA.loop = true;
                 window.bankAngle.loop = true;
                 window.overspeed.loop = true;
@@ -178,7 +178,7 @@ setTimeout((function() {
                 window.dontSink = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/dont-sink.wav');
                 window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/masterAlarm.wav');
                 window.bankAngle = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bank-angle.wav');
-                window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Overspeed%20Airbus.mp3');
+                window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Overspeed%20Airbus.mp3');
                 window.masterA.loop = true;
                 window.bankAngle.loop = true;
                 window.overspeed.loop = true;
