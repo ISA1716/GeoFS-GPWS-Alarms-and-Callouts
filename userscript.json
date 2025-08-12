@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GeoFS GPWS callouts
-// @version      1.25
+// @version      1.26
 // @description  Adds some GPWS callouts
 // @author       tylerbmusic, edited by ISA1716
 // @match        https://www.geo-fs.com/geofs.php?v=*
@@ -10,7 +10,7 @@
 // ==/UserScript==
 setTimeout((function() {
     'use strict';
-    = "u"; //CHANGE THIS LETTER TO CHANGE THE KEYBOARD SHORTCUT TO TOGGLE THE SOUNDS.
+    window.soundsToggleKey = "u"; //CHANGE THIS LETTER TO CHANGE THE KEYBOARD SHORTCUT TO TOGGLE THE SOUNDS.
     window.soundsOn = true; //This decides whether callouts are on by default or off by default.
     window.a2500 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/2500.wav');
     window.a2000 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/2000.wav');
@@ -33,7 +33,7 @@ setTimeout((function() {
     window.tooLowGear = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/too-low_gear.wav');
     window.apDisconnect = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/ap-disconnect.wav');
     window.minimumBaro = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/minimum.wav');
-    window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Pull%20Up%20Airbus.mp3#:~:text=Raw-,View%20raw,-GeoFS%2DGPWS%2DAlarms');
+    window.dontSink = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/dont-sink.wav');
     window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/masterAlarm.wav');
     window.bankAngle = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bank-angle.wav');
     window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Overspeed%20Airbus.mp3');
@@ -117,9 +117,9 @@ setTimeout((function() {
                 window.glideSlope = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/oglideslope.wav');
                 window.tooLowFlaps = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/otoo-low_flaps.wav');
                 window.tooLowGear = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/otoo-low_gear.wav');
-                window.apDisconnect = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Boeing%20Autopilot%20Disengage.mp3');
+                window.apDisconnect = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Boeing%20Autopilot%20Disengage.mp3#:~:text=Raw-,View%20raw,-GeoFS%2DGPWS%2DAlarms');
                 window.minimumBaro = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/ominimums.wav');
-                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Pull%20Up%20Boeing.mp3#:~:text=Raw-,View%20raw,-GeoFS%2DGPWS%2DAlarms');
+                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Sink%20Rate%20Pull%20Up%20Boeing.mp3');
                 window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bmasterAlarm.wav');
                 window.bankAngle = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Bank%20Angle%20Boeing.mp3');
                 window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Boeing%20Overspeed%20Alarm.mp3');
@@ -147,7 +147,7 @@ setTimeout((function() {
                 window.tooLowGear = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/btoo-low_gear.wav');
                 window.apDisconnect = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Boeing%20Autopilot%20Disengage.mp3');
                 window.minimumBaro = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bminimums.wav');
-                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Pull%20Up%20Boeing.mp3#:~:text=Raw-,View%20raw,-GeoFS%2DGPWS%2DAlarms');
+                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Sink%20Rate%20Pull%20Up%20Boeing.mp3');
                 window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bmasterAlarm.wav');
                 window.bankAngle = new Audio('ttps://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Bank%20Angle%20Boeing.mp3');
                 window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Boeing%20Overspeed%20Alarm.mp3');
@@ -175,7 +175,7 @@ setTimeout((function() {
                 window.tooLowGear = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/too-low_gear.wav');
                 window.apDisconnect = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/ap-disconnect.wav');
                 window.minimumBaro = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/minimum.wav');
-                window.dontSink = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/blob/main/Pull%20Up%20Airbus.mp3#:~:text=Raw-,View%20raw,-GeoFS%2DGPWS%2DAlarms');
+                window.dontSink = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/dont-sink.wav');
                 window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/masterAlarm.wav');
                 window.bankAngle = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bank-angle.wav');
                 window.overspeed = new Audio('https://github.com/ISA1716/GeoFS-GPWS-Alarms-and-Callouts/raw/refs/heads/main/Overspeed%20Airbus.mp3');
@@ -380,9 +380,6 @@ setTimeout((function() {
     setInterval(updateGPWS, window.gpwsRefreshRate);
     document.addEventListener('keydown', function(event) {
         if (event.key === window.soundsToggleKey) {
-            window.soundsOn = !window.soundsOn;
-        }
-    });
             window.soundsOn = !window.soundsOn;
         }
     });
